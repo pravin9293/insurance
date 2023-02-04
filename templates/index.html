@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Medical Insurance Charges Prediction </title>
+</head>
+
+
+<style>
+    body {
+      background-image: url("https://i.pinimg.com/originals/e2/d2/a2/e2d2a21effac8fa55e6b861008c83030.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;  
+      background-size: cover;}
+    </style>
+
+<!-- <style>
+    h1 {text-align: center;}
+    h3 {text-align: center;}
+    form {text-align: center;}
+    label {text-align: center;}
+    </style> -->
+
+<body>
+
+    <h2 style="color:rgb(35, 26, 168);"> Medical Insurance Charges Prediction </h2>
+
+    <form method="POST" action = "/predict_charges">
+
+        <label>Age:</label>
+        <input type = "text" name = "age">
+        </select>
+
+        <br>
+        <br>
+            
+        <label>Gender:</label>
+        <Select name = "gender">
+            <option value = "male">Male</option>
+            <option value = "female">Female</option>
+        </Select>
+            
+        <br>
+        <br>
+
+        <label>BMI:</label>
+        <input type = "text" name = "bmi">
+        </select>
+            
+        <br>
+        <br>
+            
+        <label>Children:</label>
+        <input type = "text" name = "children">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Smoker:</label>
+        <Select name = "smoker">
+            <option value = "yes">Yes</option>
+            <option value = "no">No</option>
+        </Select>
+            
+        <br>
+        <br>
+
+        <label>Region:</label>
+        <select name = "region">
+            <option value = "northeast">Northeast</option>
+            <option value = "southeast">Southeast</option>
+            <option value = "northwest">Northwest</option>
+            <option value = "southwest">Southwest</option>
+        </select>
+
+        <br>
+        <br>
+
+        <input type = "submit" value="SUBMIT">
+
+        <br>
+        
+        <h4 <strong>
+            <!-- style="background-color:hwb(188 13% 5%);"> -->
+                Your Insurance Premium Charges will be <b style="color:rgb(237, 244, 238);"> {{ prediction }} /- Rs.</b> Only </strong></h4>
+        
+    </form>
+
+        
+</body>
+</html>
+
+
+
